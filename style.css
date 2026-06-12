@@ -1,0 +1,299 @@
+*{
+    box-sizing:border-box;
+}
+
+body{
+
+    margin:0;
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:
+    linear-gradient(
+        180deg,
+        #07111f,
+        #0f1c2f,
+        #1a2740
+    );
+
+    color:white;
+
+    font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    sans-serif;
+
+    overflow:hidden;
+}
+
+.card{
+
+    width:320px;
+    padding:30px 30px;
+
+    text-align:center;
+
+    backdrop-filter:blur(20px);
+
+    background:
+    rgba(255,255,255,0.04);
+
+    border:
+    1px solid rgba(255,255,255,0.08);
+
+    border-radius:28px;
+
+    animation:
+    fadeIn 1.2s ease;
+}
+
+.eyebrow{
+
+    letter-spacing:4px;
+
+    font-size:11px;
+
+    color:#9fb3d4;
+
+    margin-bottom:20px;
+}
+
+h1{
+
+    margin:0;
+
+    font-size:32px;
+
+    font-weight:600;
+
+    line-height:1.2;
+}
+
+.artist{
+
+    margin-top:12px;
+
+    color:#b8c6df;
+
+    font-size:16px;
+}
+
+.quote{
+
+    margin-top:32px;
+
+    font-size:14px;
+
+    line-height:1.8;
+
+    color:#d5dceb;
+
+    min-height:60px;
+}
+
+.button{
+
+    display:inline-block;
+
+    margin-top:28px;
+
+    padding:12px 20px;
+
+    border-radius:999px;
+
+    text-decoration:none;
+
+    color:white;
+
+    border:
+    1px solid rgba(255,255,255,.15);
+
+    transition:.3s;
+}
+
+.button:hover{
+
+    background:
+    rgba(255,255,255,.08);
+}
+
+/* .stars{
+
+    position:fixed;
+
+    inset:0;
+
+    background-image:
+    radial-gradient(white 1px, transparent 1px);
+
+    background-size:
+    120px 120px;
+
+    opacity:.15;
+
+    animation:
+    drift 60s linear infinite;
+} */
+
+@keyframes fadeIn{
+
+    from{
+        opacity:0;
+        transform:translateY(15px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@keyframes drift{
+
+    from{
+        transform:translateY(0);
+    }
+
+    to{
+        transform:translateY(-120px);
+    }
+}
+
+.theme-default{
+
+    background:
+    linear-gradient(
+        180deg,
+        #07111f,
+        #0f1c2f,
+        #1a2740
+    );
+
+}
+
+.theme-clear{
+
+    background:
+    linear-gradient(
+        180deg,
+        #7dcfff,
+        #3f9fff,
+        #195cbe
+    );
+
+}
+
+.theme-summer{
+
+    background:
+    linear-gradient(
+        180deg,
+        #5fd7ff,
+        #1aa7ff,
+        #005cbf
+    );
+
+}
+
+.theme-midnight{
+
+    background:
+    linear-gradient(
+        180deg,
+        #020617,
+        #07132d,
+        #112044
+    );
+
+}
+
+.theme-night{
+
+    background:
+    linear-gradient(
+        180deg,
+        #0f172a,
+        #1e293b,
+        #334155
+    );
+
+}
+
+.theme-rain{
+
+    background:
+    linear-gradient(
+        180deg,
+        #4b5d67,
+        #31424c,
+        #1b2630
+    );
+
+}
+
+.theme-cherry{
+
+    background:
+    linear-gradient(
+        180deg,
+        #ffd9e8,
+        #ffb6d5,
+        #ff94c1
+    );
+
+    color:#2d3748;
+}
+
+.theme-moon{
+
+    background:
+    linear-gradient(
+        180deg,
+        #091540,
+        #152a68,
+        #233f8f
+    );
+
+}
+
+.theme-sunset{
+
+    background:
+    linear-gradient(
+        180deg,
+        #ffcf91,
+        #ff9f68,
+        #ff6a3d
+    );
+
+}
+
+.theme-ocean{
+
+    background:
+    linear-gradient(
+        180deg,
+        #00b4d8,
+        #0077b6,
+        #023e8a
+    );
+
+}
+
+.theme-stars{
+
+    background:
+    linear-gradient(
+        180deg,
+        #030712,
+        #111827,
+        #1e3a8a
+    );
+
+}
